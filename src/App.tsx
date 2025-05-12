@@ -4,11 +4,7 @@ type State = {
   keyValue: string;
 };
 
-type Property = {
-  handleKeyUp: () => void;
-};
-
-export class App extends React.Component<Property, State> {
+export class App extends React.Component<{}, State> {
   state: State = {
     keyValue: '',
   };
