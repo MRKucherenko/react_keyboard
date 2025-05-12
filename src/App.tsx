@@ -5,7 +5,7 @@ type State = {
 };
 
 type Property = {
-  handleKeyUp: (event: KeyboardEvent) => void;
+  handleKeyUp: () => void;
 };
 
 export class App extends React.Component<Property, State> {
